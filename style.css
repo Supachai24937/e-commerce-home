@@ -246,8 +246,6 @@ border-radius: 10px;
   text-align: center;
   margin-bottom: 10px;
   grid-template-columns: repeat(1);
-  grid-template-areas:
-  "button1"
 }
 .button1 {
   text-align: center;
