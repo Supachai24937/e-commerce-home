@@ -185,11 +185,30 @@ h2 {
 .fileopener:hover {
   border-bottom:3px solid var(--color-secondary);
 }
+
 .header {
   display: grid
   justify-content: space-between; /* จัดให้อยู่ซ้าย-ขวา */
   align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
-  grid-template-columns: repeat(auto-fit);
+  grid-template-columns: repeat(3);
+  padding: 10px 20px; /* เพิ่มพื้นที่ภายใน */
+  background-color: #fe6132;
+}
+@media (min-width: 768)
+.header {
+  display: grid
+  justify-content: space-between; /* จัดให้อยู่ซ้าย-ขวา */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  grid-template-columns: repeat(3);
+  padding: 10px 20px; /* เพิ่มพื้นที่ภายใน */
+  background-color: #fe6132;
+}
+@media (max-width: 768)
+.header {
+  display: grid
+  justify-content: space-between; /* จัดให้อยู่ซ้าย-ขวา */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  grid-template-columns: repeat(1);
   padding: 10px 20px; /* เพิ่มพื้นที่ภายใน */
   background-color: #fe6132;
 }
@@ -211,10 +230,18 @@ h2 {
 .button2:hover {
   background-color: silver;
 }
+@media (min-width: 768)
 .menu {
   display: grid;
   background-color: #fe6132;
-  grid-template-columns: repeat(auto-fit);
+  grid-template-columns: repeat(2);
+  justify-content: center;
+}
+@media (max-width: 768)
+.menu {
+  display: grid;
+  background-color: #fe6132;
+  grid-template-columns: repeat(1);
   justify-content: center;
 }
 .button {
