@@ -189,8 +189,7 @@ h2 {
   display: grid
   justify-content: space-between; /* จัดให้อยู่ซ้าย-ขวา */
   align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
-  grid-template-areas:
-  "img1 img menu cart-summary";
+  grid-template-columns: repeat(auto-fit);
   padding: 10px 20px; /* เพิ่มพื้นที่ภายใน */
   background-color: #fe6132;
 }
