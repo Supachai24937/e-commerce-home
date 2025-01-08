@@ -24,21 +24,32 @@
     <script src="script.js" defer></script>
   </head>
   <body>
- <div class ="header">
-   <div class="img1">
-  <a href="https://cdn.glitch.global/a5a15452-e1a5-4167-997f-7627595a9fcc/SPJ%20(1).png?v=1732514145754">
-    <img src="https://cdn.glitch.global/a5a15452-e1a5-4167-997f-7627595a9fcc/SPJ%20(1).png?v=1732514145754" alt="Image" />
-  </a>
-</div>
-  <div class ="menu">
-       <button class = "button">Home</button>
-       <button class = "button">Products</button>
+  <header class="header">
+    <nav>
+        <div class="nav-container">
+            <div class="img1">
+                <a href="https://cdn.glitch.global/a5a15452-e1a5-4167-997f-7627595a9fcc/SPJ%20(1).png?v=1732514145754">
+                    <img src="https://cdn.glitch.global/a5a15452-e1a5-4167-997f-7627595a9fcc/SPJ%20(1).png?v=1732514145754" alt="Image" />
+                </a>
+            </div>
+            <input type="checkbox" id="nav-toggle">
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </div>
+    </nav>
+</header>
+    <div class ="menu">
   </div>
-  <div cart="cart-summary">
-   <button class="button2" onclick="window.location.href='cart.html';">View Cart</button>
-    <p>Total Price: $<span id="total-price">0</span></p>
-  </div>
-</div>
     <div class ="container">
       <div class ="product">
 <div class="img">
