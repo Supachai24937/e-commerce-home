@@ -186,11 +186,30 @@ h2 {
   border-bottom:3px solid var(--color-secondary);
 }
 .header {
-   grid-area: header;
-   text-align: center;
-   background-color: #fe6132;
+  display: flex; /* ใช้ Flexbox */
+  justify-content: space-between; /* จัดให้อยู่ซ้าย-ขวา */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  padding: 10px 20px; /* เพิ่มพื้นที่ภายใน */
+  background-color: #fe6132;
 }
-
+.img1 img {
+  width: 75px;
+  height: 75px;
+  margin: 15px;
+  border-radius: 10px;
+}
+.cart-summary {
+  display: flex;
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  gap: 10px; /* ระยะห่างระหว่างปุ่มและข้อความ */
+}
+.button2 {
+  text-align: center;
+  border: 0px;
+}
+.button2:hover {
+  background-color: silver;
+}
 .menu {
   display: grid;
   background-color: #212b36;
@@ -203,12 +222,6 @@ h2 {
 }
 .button:hover {
   background-color: silver;
-}
-.img1 img {
-  width: 75px;
-  height: 75px;
-  margin: 15px;
-  border-radius: 10px;
 }
 .container {
   display: grid;
@@ -257,13 +270,7 @@ border-radius: 10px;
 }
 .button1:hover {
   background-color: lightblue;
-}
-.button2 {
-  text-align: center;
-  border: 0px;
-}
-.button2:hover {
-  background-color: silver;
+  color: black;
 }
 .footer {
   background-color: black;
