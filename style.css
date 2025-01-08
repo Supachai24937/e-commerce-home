@@ -186,9 +186,11 @@ h2 {
   border-bottom:3px solid var(--color-secondary);
 }
 .header {
-  display: flex; /* ใช้ Flexbox */
+  display: grid
   justify-content: space-between; /* จัดให้อยู่ซ้าย-ขวา */
   align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  grid-template-areas:
+  "img1 img menu cart-summary";
   padding: 10px 20px; /* เพิ่มพื้นที่ภายใน */
   background-color: #fe6132;
 }
@@ -212,8 +214,8 @@ h2 {
 }
 .menu {
   display: grid;
-  background-color: #212b36;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 210px));
+  background-color: #fe6132;
+  grid-template-columns: repeat(auto-fit);
   justify-content: center;
 }
 .button {
